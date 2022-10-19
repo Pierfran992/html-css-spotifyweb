@@ -1,6 +1,48 @@
+/* general rules */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+#media-player {
+    width: 100vw;
+    height: 90px;
+    color: #fff;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#menu-bar {
+    width: 230px;
+    height: calc(100vh - 90px);
+    background-color: #000000;
+}
+
+#top-bar {
+    color: #fff;
+    background-color: #000000;
+    opacity: 0.8;
+    width: calc( 100vw - 230px );
+    height: 90px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+
+#conteiner-song {
+    background-color: #0c0f14;
+    width: calc( 100vw - 230px);
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.home-page {
+    display: flex;
 }
