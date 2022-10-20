@@ -209,7 +209,7 @@ p {
 }
 
 .score-time {
-    width: 10%;
+    width: 25%;
     height: 100%;
     background-color: #fff;
     border-radius: 10px;
@@ -288,13 +288,46 @@ p {
 @media screen and (max-width: 878px) {
     
     /* media player section */
-    
+    .ctn-media-player.big {
+        width: 30vw;
+    }
+
+    .ctn-function-keys>i {
+        padding: 0 7px;
+    }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 639px) {
     
     /* media player section */
-    
+    #media-player {
+        padding: 0 3px;
+        justify-content: space-around;
+    }
+
+    .ctn-media-player.left {
+        width: 200px;
+        justify-content: flex-start;
+    }
+
+    .ctn-small-mp {
+        width: 60%;
+    }
+
+    .ctn-favourite-icon {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ctn-media-player.big {
+        width: 230px;
+    }
+
+    .ctn-settings-keys > i {
+        padding: 4px;
+    }
 
 }
 
