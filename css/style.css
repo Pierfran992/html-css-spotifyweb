@@ -99,17 +99,42 @@ p {
     border-radius: 20px;
     cursor: pointer;
 }
-
+/*  hover top bar */
 #btn-upd:hover {
     font-size: 1.5rem;
     border-radius: 30px;
+}
+
+/* menu bar */
+.menu-bar {
+    padding: 5px;
+}
+
+.ctn-menu-bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ctn1 {
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+}
+
+.ctn2 {
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
 }
 
 /* container song */
 
 /* media player */
 .ctn-media-player {
-    width: 22vh;
+    width: 230px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -130,7 +155,8 @@ p {
 }
 
 #name-artist-mp {
-    width: 60%;
+    width: 70%;
+    padding-left: 5px;
 }
 
 #name-artist-mp > span {
@@ -147,12 +173,12 @@ p {
 }
 
 .ctn-favourite-icon > i {
-    padding: 0 5px;
+    padding: 0 3px;
     color: #676767;
 }
 
 .ctn-media-player.big {
-    width: 60vh;
+    width: 40vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -176,6 +202,7 @@ p {
     width: 90%;
     height: 6px;
     background-color: #5a5a5a;
+    margin: 0 10px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -258,68 +285,22 @@ p {
     scale: 1.5;
 }
 
-@media screen and (max-width: 1200px) {
-    
-    /* media player section */
-    .ctn-media-player.big {
-        width: 40vh;
-    }
-
-    .time {
-        width: 70%;
-    }
-
-    .ctn-settings-keys > i {
-        padding: 4px;
-    }
-}
-
 @media screen and (max-width: 878px) {
     
     /* media player section */
-    .ctn-media-player.big {
-        width: 25vh;
-    }
-
-    .ctn-function-keys > i {
-        font-size: 1.2rem;
-        padding: 0 5px;
-    }
+    
 }
 
 @media screen and (max-width: 650px) {
     
     /* media player section */
-    .ctn-media-player {
-        width: 18vh;
-    }
-
-    .ctn-media-player.big {
-        width: 20vh;
-    }
-
-    .ctn-time-bar {
-        width: 80%;
-    }
-
-    .ctn-small-mp {
-        width: 70%;
-    }
-
-    .ctn-favourite-icon {
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
 
 }
 
 @media screen and (max-width: 552px) {
     
     /* media player section */
-    .ctn-media-player{
-        width: 16vh;
-    }
+    
 
 }
