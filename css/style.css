@@ -16,25 +16,13 @@ i {
     cursor: pointer;
 }
 
-/* debug */
-p {
-    font-size: 2rem;
-}
-#prova {
-    width: 90%;
-    max-width: 1400px;
-    color: #fff;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* main rules */
 
 #home-page {
     width: 100vw;
     height: calc( 100vh - 90px );
     display: flex;
+    justify-content: flex-start;
 }
 
 #home-left {
@@ -45,7 +33,6 @@ p {
 #home-right {
     width: calc( 100% - 230px);
     height: 100%;
-    background-color: aquamarine;
 }
 
 #menu-bar {
@@ -102,18 +89,69 @@ p {
     justify-content: space-between;
 }
 
+/* top col */
 .top-col {
     width: 100%;
-    height: 50%;
+    height: 750px;
     /* debug */
     background-color: blue;
+}
+
+#logo {
+    width: 180px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#logo-small{
+    width: 90px;
+    height: auto;
+    padding: 20px;
+    display: none;
+}
+
+.explor-menu {
+    padding-top: 30px;
+}
+
+.btn-explor-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-explor-menu.select {
+    border-left: solid 2px #bbff32;
+}
+
+.ctn-icon-explor-menu {
+    width: 30%;
+    padding-left: 20px;
+}
+
+.icon-btn {
+    width: 40px;
+    height: auto;
+}
+
+.name-btn {
+    color: #676767;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.name-btn.home {
+    color: #fff;
 }
 
 /* bottom col */
 .bottom-col {
     width: 100%;
     height: 100px;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .ctn-link-dwn-app, .ctn-user {
@@ -381,8 +419,41 @@ p {
 }
 
 @media screen and (max-width: 552px) {
-    
-    /* media player section */
-    
+    /* general rules */
+    #home-left {
+        width: 115px;
+    }
+
+    #home-right {
+        width: calc(100% - 115px);
+    }
+
+    /* top col */
+    #logo {
+        display: none;
+    }
+
+    #logo-small {
+        display: block;
+
+    }
+
+    /* bottom col */
+    #dnw-app {
+        display: none;
+    }
+
+    .bottom-col > hr {
+        display: none;
+    }
+
+    .name-user {
+        display: none;
+    }
+
+    /* top bar */
+    #top-bar {
+        width: calc(100% - 115px);
+    }
 
 }
