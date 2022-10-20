@@ -97,6 +97,12 @@ p {
     padding: 10px 50px;
     border: solid 2px #fff;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+#btn-upd:hover {
+    font-size: 1.5rem;
+    border-radius: 30px;
 }
 
 /* container song */
