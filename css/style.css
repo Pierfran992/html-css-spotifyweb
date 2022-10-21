@@ -332,7 +332,17 @@ a.select {
 }
 
 .img-song {
-    
+    position: relative;
+}
+
+.play-song {
+    color: #fff;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: none;
 }
 
 .slot-title-song {
@@ -356,6 +366,14 @@ a.select {
 /* hover container song */
 .nav-bar > a:hover {
     color: #fff;
+}
+
+.song:hover .play-song {
+    display: block;
+}
+
+.song:hover img {
+    opacity: 0.5;
 }
 
 
@@ -509,7 +527,7 @@ a.select {
     color: #fff;
 }
 
-.fa-circle-play:hover {
+.play:hover {
     scale: 1.5;
 }
 
