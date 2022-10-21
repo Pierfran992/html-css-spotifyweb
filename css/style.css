@@ -15,7 +15,9 @@ img {
 i {
     cursor: pointer;
 }
-
+.debug {
+    margin-top: 100px;
+}
 /* main rules */
 
 #home-page {
@@ -28,6 +30,7 @@ i {
 #home-left {
     width: 230px;
     height: 100%;
+    overflow: hidden;
 }
 
 #home-right {
@@ -92,9 +95,19 @@ i {
 /* top col */
 .top-col {
     width: 100%;
-    height: 600px;
-    /* debug */
-    background-color: blue;
+    height: 650px;
+}
+
+.ctn-logo {
+    height: 100px;
+}
+
+.explor-menu {
+    height: 150px;
+}
+
+.playlist {
+    height: 400px;
 }
 
 #logo {
@@ -136,6 +149,10 @@ i {
     width: 30px;
     height: auto;
     filter: brightness(0.7);
+}
+
+.icon-btn.home {
+    filter: none;
 }
 
 .name-btn {
@@ -186,6 +203,23 @@ i {
 .nome-playlist {
     color: #676767;
     text-decoration: none;
+}
+
+/* hover top col */
+.btn-explor-menu:hover  * {
+    filter: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-add-playlist:hover * {
+    filter: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nome-playlist:hover {
+    color: #fff;
 }
 
 /* bottom col */
@@ -492,6 +526,10 @@ i {
         display: none;
     }
 
+    .playlist {
+        display: none;
+    }
+
     /* bottom col */
     #dnw-app {
         display: none;
@@ -510,4 +548,10 @@ i {
         width: calc(100% - 115px);
     }
 
+}
+
+@media screen and (max-height: 650px) {
+    .menu-playlist {
+        height: 150px;
+    }
 }
