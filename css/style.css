@@ -298,6 +298,7 @@ i {
 .nav-bar {
     width: 100%;
     text-align: center;
+    line-height: 50px;
 }
 
 .nav-bar > a {
